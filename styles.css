@@ -1,0 +1,10 @@
+body{font-family:Arial,sans-serif;background:#0b1020;color:#e5e7eb;margin:0}
+.container{max-width:900px;margin:auto;padding:24px}
+.card,.job{background:#121a33;border:1px solid #243055;border-radius:10px;padding:14px;margin-bottom:14px}
+.row{display:flex;gap:14px;flex-wrap:wrap}
+label{display:block;margin:8px 0}
+input[type='text'],input[type='number'],input[type='file']{width:100%;padding:8px;border-radius:6px;border:1px solid #334155;background:#0f172a;color:#e5e7eb}
+button{padding:10px 12px;border:0;border-radius:8px;background:#2563eb;color:#fff;cursor:pointer;margin-right:8px}
+button.secondary{background:#334155}
+a{color:#93c5fd}
+#status{margin:12px 0}

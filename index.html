@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neural Apply • AI/ML Job Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Neural Apply</h1>
+    <p>Upload your resume and find latest AI/ML roles with STEM, H1, and GC filters.</p>
+
+    <section class="card">
+      <label>Resume
+        <input id="resume" type="file" accept=".pdf,.docx,.txt" />
+      </label>
+
+      <div class="row">
+        <label><input type="checkbox" id="stem" /> STEM</label>
+        <label><input type="checkbox" id="h1" /> H1 sponsorship</label>
+        <label><input type="checkbox" id="gc" /> GC / PR</label>
+      </div>
+
+      <label>Location filter
+        <input id="location" type="text" placeholder="Remote, USA, India..." />
+      </label>
+
+      <label>Posted within days
+        <input id="maxAge" type="number" min="1" max="60" value="14" />
+      </label>
+
+      <button id="run">Find Latest AI/ML Jobs</button>
+      <button id="submitAll" class="secondary">Submit to All (Open Links)</button>
+    </section>
+
+    <section id="status"></section>
+    <section id="results" class="results"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
